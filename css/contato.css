@@ -1,0 +1,129 @@
+
+.contato{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  min-height:30vh;
+  gap:1.5rem;
+  
+  background-color:#DCC7AA;
+}
+
+.contato .nome-contato{
+  font-size:4rem;
+  animation: moverBaixo 1.5s ease;
+}
+
+.contato .nome-endereco, .contato p{
+  font-size:2.5rem;
+  animation: moverDireita 1.5s ease;
+}
+
+.contato .btn-contato{
+  display: flex;
+  
+  gap:1rem;
+  margin-bottom:1rem;
+  
+  animation: moverBaixo 1.5s ease;
+}
+
+.contato .btn-contato .whatsapp, .contato .btn-contato .email{
+  padding:1rem;
+  margin-top:1.5rem;
+  font-size: 1.5rem;
+  
+  text-decoration: none;
+  border:4px solid #D4AF37;
+  background-color:#4E342E;
+}
+
+.contato .btn-contato .email:hover .bi-envelope-at{
+  color:#D7CCC8;
+}
+
+.contato .btn-contato .whatsapp:hover{
+  border:4px solid green;
+  background-color:#4ADE80;
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
+.contato .btn-contato .email:hover{
+  border:4px solid #D7CCC8;
+  background-color:#ed9532;
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
+
+.contato .btn-contato .whatsapp:hover .bi-whatsapp{
+  color:green;
+}
+
+/*Animações*/
+
+@keyframes moverBaixo{
+  from{
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes moverDireita{
+  from{
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/*-------------------------------*/
+
+/*Responsividade*/
+
+@media(max-width:680px){
+  .contato{
+    min-height:50vh;
+  }
+  
+  .contato .nome-contato{
+    font-size:3rem;
+  }
+
+
+  .contato .nome-endereco, .contato p{
+   font-size:1.5rem;
+ }
+}
+
+@media(max-width:1024px){
+  .contato{
+    padding: 2rem;
+  }
+}
+
+
+@media(max-width:480px){
+  .contato .btn-contato{
+    flex-direction:column;
+    width:100%;
+  }
+
+  .contato .btn-contato .whatsapp,
+  .contato .btn-contato .email{
+    width:100%;
+  }
+}
+
+
+/*-------------------------------*/
+

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cafeteria artesanal com cafés especiais e ambiente aconchegante.">
+  <title>Cafeteria Aroma</title>
+  <meta
+    name="keywords"
+    content="cafeteria, café, cappuccino, espresso, doces, cafeteria artesanal"
+  >
+  <meta name="author" content="Lune Souza">
+  <!--css e bootstrap-->
+  <link rel = "stylesheet" href = "css/header.css">
+  <link rel = "stylesheet" href = "css/main.css">
+  <link rel = "stylesheet" href = "css/cardapio.css">
+    <link rel = "stylesheet" href = "css/contato.css">
+     <link rel = "stylesheet" href = "css/sobre-nos.css">
+     <link rel = "stylesheet" href = "css/footer.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <!--------------------->
+  <link rel="icon" href="/Logo.png" type="image/png">
+</head>
+<body>
+  <!--Header-->
+  <header>
+    <section class="info">
+      <h2><i class="bi bi-cup-hot-fill"> Café aurora</i></h2>
+    
+    <nav class="nav">
+      <ul class = "nav-desktop">
+        <li><a href = "#">Inicio</a></li>
+        <li><a href = "#RedirecionarCardapio">Cardápio</a></li>
+        <li><a href = "#RedirecionarContato">Contato</a></li>
+        <li><a href = "#RedirecionarSobreNos">Sobre nós</a></li>
+      </ul>
+      
+      <section class="navHamburger">
+        <button id="btn-nav" araial-label = "abrir menu"><i class="bi bi-list"></i></button>
+        <button id = "voltarBtn" class = "fechado" araial-label = "voltar para pagina"><i class="bi bi-arrow-left-circle-fill"></i></button>
+      </section>
+    </nav>
+    
+
+    </section>
+  </header>
+      <div id="overlay" class = "overlay"></div>
+  <section id = "menu-responsivo-id" class = "menu-responsivo">
+      
+      <ul class = "navBurguer">
+        <li><a class = "link-nav" href = "#" class = "link-nav">Início</a></li>
+        <li><a href = "#RedirecionarCardapio" class = "link-nav">Cardápio</a></li>
+        <li><a href = "#RedirecionarContato" class = "link-nav">Contato</a></li>
+        <li><a href = "#RedirecionarSobreNos" class = "link-nav">Sobre nós</a></li>
+      </ul>
+    </section>
+    <!--------------------->
+    <!--Pagina Principal-->
+   <main>
+     <section class="central">
+       <h1>Seu momento de pausa
+<br>merece um <span>ótimo café</span></h1>
+<p>
+  Cafés especiais preparados com grãos selecionados,
+  doces artesanais e um ambiente acolhedor.
+</p>
+       <a href = "#"><i class="bi bi-whatsapp"> Faça o pedido</i></a>
+     </section>
+   </main>
+   <!--------------------->
+   <!--Cardapio-->
+   <section id = "RedirecionarCardapio" class="cardapio">
+     <h2 class = "nome-cardapio">Cardápio</h2>
+       <ul class="cards-cardapio">
+         <li>
+           <img src = "Expresso.jpg" alt = "imagem de expresso" width = "200">
+           <h2><i class="bi bi-cup-hot-fill"> Expresso</i></h2>
+         <p class = "descricao">Café encorpado e aromático.</p>
+        
+        <section class="infoProduto">
+          <a href = "#"><i class="bi bi-whatsapp"> Faça o pedido</i></a>
+         <strong>R$ 7,00</strong>
+        </section>
+         </li>
+         <li>
+           <img src = "Cappuccino.jpg" alt = "imagem de capuccino" width = "200">
+           <h2><i class="bi bi-cup-hot-fill"> Cappuccino</i></h2>
+         <p class = "descricao">Café com leite cremoso.</p>
+        
+        <section class="infoProduto">
+          <a href = "#"><i class="bi bi-whatsapp"> Faça o pedido</i></a>
+         <strong>R$ 12,00</strong>
+        </section>
+         </li>
+         <li>
+           <img src = "Mocha.jpg" alt = "imagem de mocha" width = "200">
+           <h2><i class="bi bi-cup-hot-fill"> Mocha</i></h2>
+         <p class = "descricao">Café e chocolate.</p>
+        
+        <section class="infoProduto">
+          <a href = "#"><i class="bi bi-whatsapp"> Faça o pedido</i></a>
+         <strong>R$ 14,00</strong>
+        </section>
+         </li>
+       </ul>
+   </section>
+   <!--------------------->
+   <!--Contato-->
+   <section id = "RedirecionarContato" class="contato">
+     <h2 class = "nome-contato">Contato</h2>
+     <section class="btn-contato">
+      <a href = "#" class = "whatsapp"><i class="bi bi-whatsapp"> Faça o pedido</i></a>
+       <a href = "#" class = "email"><i class="bi bi-envelope-at"> Email</i></a>
+     </section>
+
+     <section class="endereco">
+       <h2 class = "nome-endereco"><strong>Endereço:</strong> Rua teste Cafeteria, 245 – Centro, Porto Alegre – RS</h2><br><br>
+       <p>A loja está disponível de segunda a sexta das 8h até 18h</p>
+       
+     </section>
+     
+   </section>
+   <!--------------------->
+   <!--Sobre nós-->
+   <section id = "RedirecionarSobreNos" class="sobreNos">
+     <section class="sobreNos-img">
+       <img src="SobreNos.png" alt="imagem de café" width = "200">
+     </section>
+     <section class="sobrenos-info">
+       <h2 class = "nome-sobreNos">Sobre nós</h2>
+     <p>
+    No Café Aurora, acreditamos que um bom café vai além do sabor. Trabalhamos com grãos selecionados e ingredientes de qualidade para oferecer bebidas preparadas com cuidado e atenção em cada detalhe. Nosso ambiente foi pensado para proporcionar conforto e tranquilidade, seja para uma pausa durante o dia, um encontro entre amigos ou um momento de relaxamento. Mais do que servir cafés e doces artesanais, buscamos criar experiências acolhedoras que façam nossos clientes se sentirem em casa.
+  </p>
+     </section>
+   </section>
+   <!--------------------->
+   <!--Footer-->
+   <section class="footer">
+     <section class="redesSociais">
+       <a href="#"><i class="bi bi-youtube"> Youtube</i></a>
+       <a href="#"><i class="bi bi-tiktok">  TikTok</i></a>
+       <a href="#"><i class="bi bi-facebook"> Facebook</i></a>
+       <a href="#"><i class="bi bi-instagram"> Instagram</i></a>
+     </section>
+      <p>© 2026 Café Aroma. Todos os direitos reservados.</p>
+   </section>
+   <!--------------------->
+  <script src = "script.js"></script>
+</body>
+</html>
+
