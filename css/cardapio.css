@@ -5,12 +5,13 @@
   justify-content: center;
   align-items: center;
   
-  min-height:60vh;
+  min-height:35vh;
+  background-color:rgb(54, 34, 8);
 }
 
 .cardapio .nome-cardapio{
   font-size:4rem;
-  color:#4E342E;
+  color:#E8DDD7;
   animation: moverBaixo 1.5s ease;
 }
 
